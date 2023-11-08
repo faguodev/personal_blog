@@ -1,0 +1,54 @@
+:root {
+  --primary: #42427d;
+  --body1: #1d1e18;
+  --white: #fff;
+}
+
+h1,
+.h1 {
+  font-family: "Roboto";
+  color: var(--primary);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+  word-break: break-word;
+}
+
+h2,
+.h2 {
+  font-family: "Roboto";
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 10px 0;
+}
+
+h3,
+.h3 {
+  font-family: "Roboto";
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0 0 10px 0;
+}
+
+h4,
+.h4 {
+  font-family: "Roboto";
+  color: var(--body1);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 10px 0;
+}
+
+p,
+.body1 {
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: normal;
+  color: var(--body1);
+}
