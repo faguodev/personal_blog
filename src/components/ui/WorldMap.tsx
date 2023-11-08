@@ -14,7 +14,7 @@ export const WorldMap = React.memo(
   }) => {
     return (
       <div>
-        <ComposableMap>
+        <ComposableMap height={470}>
           <ZoomableGroup>
             <Geographies geography="/features.json">
               {({ geographies }) =>
