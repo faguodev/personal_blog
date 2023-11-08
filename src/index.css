@@ -1,3 +1,7 @@
+:root {
+  --foreground: #f8f8f2;
+}
+
 *,
 *:before,
 *:after {
@@ -23,6 +27,21 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.opaque {
+  opacity: 1 !important;
+}
+
+.tooltip {
+  border: 1px solid var(--foreground);
+}
+
+.tooltipArrow {
+  border: 1px solid var(--foreground);
+  border-top: 0px;
+  border-left: 0px;
+  margin-top: -1px;
 }
 
 /* Chrome, Safari, Edge, Opera */

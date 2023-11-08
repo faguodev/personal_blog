@@ -1,32 +1,32 @@
 import { createTheme } from "@mui/material/styles";
 
 export const customColors = {
-  primaryColor: "#42427D",
-  primaryColorDark: "#2C2C53",
-  primaryColorLight: "#8a8ac1",
-  sky: "#C7F2FF",
-  rose: "#FFE5EE",
-  green: "#6b8f71",
-  tomato: "#fe654f",
-  white: "#FFFFFF",
-  body1: "#1D1E18",
+  background: "#282A36",
+  currentLine: "#44475A",
+  foreground: "#F8F8F2",
+  comment: "#6272A4",
+  cyan: "#8BE9FD",
+  green: "#50FA7B",
+  orange: "#FFB86C",
+  pink: "#FF79C6",
+  purple: "#BD93F9",
+  red: "#FF5555",
+  yellow: "#F1FA8C",
 };
 
 export const theme = createTheme({
   palette: {
     background: {
-      default: customColors.white,
+      default: customColors.background,
     },
     primary: {
-      main: customColors.primaryColor,
-      dark: customColors.primaryColorDark,
-      light: customColors.primaryColorLight,
+      main: customColors.background,
     },
     text: {
-      primary: customColors.primaryColor,
+      primary: customColors.foreground,
     },
     warning: {
-      main: customColors.tomato,
+      main: customColors.red,
     },
     success: {
       main: customColors.green,

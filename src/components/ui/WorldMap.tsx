@@ -36,34 +36,46 @@ export const WorldMap = React.memo(
                       }
                       if (geo.properties.visited) {
                         props.setTooltipStyle({
-                          backgroundColor: customColors.primaryColorDark,
-                          color: customColors.white,
+                          backgroundColor: customColors.foreground,
+                          color: customColors.background,
                         });
                       } else {
-                        props.setTooltipStyle({});
+                        props.setTooltipStyle({
+                          backgroundColor: customColors.background,
+                          color: customColors.foreground,
+                        });
                       }
                     }}
                     onMouseLeave={() => {
                       props.setTooltipContent("");
+                      props.setTooltipStyle({
+                        display: "none",
+                      });
                     }}
                     style={{
                       default: {
                         fill: geo.properties.visited
-                          ? customColors.primaryColor
-                          : "#D6D6DA",
-                        outline: "none",
+                          ? customColors.foreground
+                          : customColors.background,
+                        stroke: geo.properties.visited
+                          ? customColors.background
+                          : customColors.foreground,
                       },
                       hover: {
                         fill: geo.properties.visited
-                          ? customColors.primaryColor
-                          : "#D6D6DA",
-                        outline: "none",
+                          ? customColors.foreground
+                          : customColors.background,
+                        stroke: geo.properties.visited
+                          ? customColors.background
+                          : customColors.foreground,
                       },
                       pressed: {
                         fill: geo.properties.visited
-                          ? customColors.primaryColor
-                          : "#D6D6DA",
-                        outline: "none",
+                          ? customColors.foreground
+                          : customColors.background,
+                        stroke: geo.properties.visited
+                          ? customColors.background
+                          : customColors.foreground,
                       },
                     }}
                   />

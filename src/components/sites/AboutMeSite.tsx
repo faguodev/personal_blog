@@ -1,10 +1,11 @@
 import React from "react";
 import { WorldMapContainer } from "../ui/WorldMapContainer";
+import { CenteredContent } from "../ui/CenteredContent";
 
 export const AboutMeSite = () => {
   return (
-    <div>
+    <CenteredContent>
       <WorldMapContainer />
-    </div>
+    </CenteredContent>
   );
 };
